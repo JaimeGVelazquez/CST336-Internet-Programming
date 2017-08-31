@@ -14,7 +14,7 @@ in html
     <head>
         <meta charset="utf-8" />
         <title> Jaime Velazquez: Personal Website</title>
-        
+       <link href="css/styles.css" rel="stylesheet" type="text/css" />
     </head>
 <!-- closing head -->
 
@@ -26,7 +26,7 @@ in html
         </header>
         <nav>
             <hr width="50%" />
-            <a href="index.html" >Home</a>
+            <a href="index.php" ><u>Home</u></a>
             <a href="about.html" >About</a>   
             <a href="contact.html">Contact</a>
         </nav>
@@ -34,11 +34,11 @@ in html
         <br /><br />
         
         <main>
-            <figure>
+            <figure id="me">
                 <img src="img/jaime_velazquez.jpg" alt="Picture of Juan Doe (not me)."/>
             </figure>
             
-            <div>
+            <div id="welcomeText">
                 Hello! <br />
                 <p>Thank you for visiting my professional portfolio website.</p>
                 
@@ -61,9 +61,14 @@ in html
         <!-- The footer goes inside the body but not always -->
         <footer>
             <hr>
-            CST336 Internet Programming. 2017&copy; Velazquez <br />
-            <strong>Disclaimer: </strong> The information on this page is fictitious. <br />
-            It is used for academic purposes only.
+            <figure id="logo">
+                <img src="img/otter_logo.jpg" alt="CSUMB logo." />
+            </figure>
+            <font size="-1" color="#000066">
+                CST336 Internet Programming. 2017&copy; Velazquez <br />
+                <strong>Disclaimer: </strong> The information on this page is fictitious. <br />
+                It is used for academic purposes only.
+            </font>
         </footer>
         <!-- closing footer -->
         
