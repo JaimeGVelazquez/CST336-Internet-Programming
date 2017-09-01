@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html>
 <!--
-
 First Website
 and comment
 in html
 (comments can span multiple lines)
-
 -->
 
 <!-- This is the head -->
@@ -26,7 +24,7 @@ in html
         </header>
         <nav>
             <hr width="50%" />
-            <a href="index.html" ><u>Home</u></a>
+            <a href="index.php" ><u>Home</u></a>
             <a href="about.html" >About</a>   
             <a href="contact.html">Contact</a>
         </nav>
@@ -36,7 +34,7 @@ in html
         <main>
             
             <figure id="me">
-                <img src="img/jaime_velazquez.jpg" alt="Picture of me."/>
+                <img src="img/jaime_velazquez.JPG" alt="Picture of me."/>
             </figure>
             
             <div id="welcomeText">
