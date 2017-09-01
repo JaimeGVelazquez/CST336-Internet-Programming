@@ -13,6 +13,7 @@ in html
         <meta charset="utf-8" />
         <title> Jaime Velazquez: Personal Website</title>
        <link href="css/styles.css" rel="stylesheet" type="text/css" />
+       <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     </head>
 <!-- closing head -->
 
@@ -41,9 +42,9 @@ in html
                 Hello! <br />
                 <p>Thank you for visiting my professional portfolio website.</p>
                 
-                <p>I am a senior software engineering student at CSUMB.</p>
+                <p>I am a senior software engineering student at CSUMB. <br /> I transfered from Hartnell College after two years of study.</p>
                 
-                <p>Feel free to contact me.</p>
+                <p>Feel free to contact me for any questions that you may have!.</p>
                 
                 <br /><br />
                 
@@ -63,7 +64,7 @@ in html
             <figure id="logo">
                 <img src="img/otter_logo.jpg" alt="CSUMB logo." />
             </figure>
-            <font size="-1" color="#000066">
+            <font size="-1" color="grey">
                 CST336 Internet Programming. 2017&copy; Velazquez <br />
                 <strong>Disclaimer: </strong> The information on this page is fictitious. <br />
                 It is used for academic purposes only.
