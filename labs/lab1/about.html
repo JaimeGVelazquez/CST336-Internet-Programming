@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html>
 <!--
-
 First Website
 and comment
 in html
 (comments can span multiple lines)
-
 -->
 
 <!-- This is the head -->
