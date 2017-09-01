@@ -72,3 +72,8 @@ ul {
 .hobby {
     color: yellow;
 }
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 4em;
+    margin-bottom: 0px;
+}
