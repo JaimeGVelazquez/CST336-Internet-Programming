@@ -9,6 +9,7 @@ header, main, nav, footer, #content{
 }
 
 nav a { /*links within "nav" container */
+    font-family: 'Pacifico', cursive;
     padding:15px;
     padding-bottom: 4px;
     font-size:1.8em;
