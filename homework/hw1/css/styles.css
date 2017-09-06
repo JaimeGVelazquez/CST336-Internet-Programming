@@ -1,0 +1,94 @@
+body {
+    background-color: black;
+    color: grey;
+}
+
+header, main, nav, footer, #content{
+    color: #0e7f35;
+    margin: 0 auto;
+    text-align: center;
+}
+
+nav a { /*links within "nav" container */
+    font-family: 'Pacifico', cursive;
+    padding:15px;
+    padding-bottom: 4px;
+    font-size:1.8em;
+    text-decoration: none;    /* removes underline*/
+   
+}
+
+nav a:hover { /* psuedo class */
+    border-bottom:2px orange solid;
+    font-size: 2em;
+    transition: .9s; /* transition effect */
+}
+
+#mainPic, #bodyText{
+   margin:0 auto;
+   text-align: center;
+}
+p {
+    font-size: 125%;
+}
+
+#logo {
+    float: none;
+}
+
+footer {
+    clear: left;
+}
+/*
+table {
+    margin: 0px auto;
+}
+
+td {
+    padding-right:10px;
+    font-size:1.3em;
+}
+
+td strong{
+    color: orange;
+}
+
+#table-header {
+    background-color:#351a00;
+}
+
+.table-row {
+    background-color:#753900;
+}
+
+ul {
+    text-align: left;
+    padding-left: 200px;
+}
+
+.hobby {
+    color: yellow;
+}
+*/
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3em;
+    margin-bottom: 0px;
+}
+
+h2 {
+    color: orange;
+}
+
+#indexNav {
+    color:#c19d19;
+}
+#javaNav {
+    color:#015403;
+}
+#phpNav {
+    color:#374211;
+}
+#pythonNav {
+    color:#f4f142;
+}
