@@ -36,6 +36,11 @@ footer {
     clear: left;
 }
 
+#footer {
+    font-size: 12px;
+    color: grey;
+}
+
 h1 {
     opacity: .8;
     font-family: 'Pacifico', cursive;
@@ -63,3 +68,7 @@ h2 {
  pre {
      font-size:125%;
  }
+ul {
+    width: 25%;
+    margin: auto;
+}
