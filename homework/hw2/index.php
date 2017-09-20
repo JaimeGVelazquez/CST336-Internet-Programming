@@ -37,33 +37,27 @@
     $top5Lakers = array("Shaquille O'Neil", "Kobe Bryant", "Jerry West", "Kareem Abdul-Jabbar", "Magic Johnson");
     $top5Kings = array("Chris Webber", "Vlade Divac", "Mike Bibby", "Peja Stejakovic", "Oscar Robertson");
     
-            switch ($random)  {
-                case 0: $team = 'Warriors';
-                        break;
-                case 1: $team = 'Lakers';
-                        break;
-                case 2: $team = 'Kings';
-                        break;
-            }
-            
             if($random == 0)
             {
                 $fact1 = 'In 2016, the Warriors broke the record for the most wins in a regular season with a total of 73 wins and nine losses.';
                 $fact2 = 'Originally located in Philadelphia.';
                 $fact3 = 'In 2017 the Warriors won their first NBA championship against the Clevelenand Cavaliers in 40 years. ';
                 $selectedPics = $teamPics0;
+                $team = 'Warriors';
                 shuffle($selectedPics);
             } else if ($random == 1){
                 $fact1 = 'Hold the record for the longest game winning streak, set during the 1971-1972 season with 33 wins.';
                 $fact2 = 'A total of 21 hall of famers have played for the Lakers.';
                 $fact3 = 'The Lakers have a total of 16 NBA championship wins.';
                 $selectedPics = $teamPics1;
+                $team = 'Lakers';
                 shuffle($selectedPics);
             } else {
                 $fact1 = 'One of the oldest basketball franchises, with its creation in 1923.';
                 $fact2 = 'Originated in Rochester, New York as the Rochester Seagrams.';
                 $fact3 = 'The Kings hold the record for most relocations out of any NBA team, with a total of 5.';
                 $selectedPics = $teamPics2;
+                 $team = 'Kings';
                 shuffle($selectedPics);
             }
             

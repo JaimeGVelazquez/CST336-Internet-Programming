@@ -1,7 +1,6 @@
-h1 {
-    color: red;
-    text-align : center;
+h1 {    text-align : center;
     font-family: 'Pacifico', cursive;
+    
 }
 
 body {
@@ -12,8 +11,8 @@ body {
     margin-left: auto;
     margin-right:auto;
     display:block;
-    height: 150px;
-    width: 30%;
+    height: 300px;
+    width: 40%;
 }
 
 #list {
@@ -24,18 +23,22 @@ body {
 
 #footerPic {
     border-radius: 50px 50px 50px 50px;
-    height: 150px;
-    width: 30%;
+    height: 300px;
+    width: 40%;
     display: block;
     margin: 0 auto;
 }
 
 ul {
     display:inline;
+    font-size: 1.5em;
+    font-weight:bold;
 }
 
 p {
     margin: auto 0;
     text-align: center;
+    font-size: 1.5em;
+    font-weight:bold;
 }
 
