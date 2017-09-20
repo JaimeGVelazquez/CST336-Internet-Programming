@@ -1,0 +1,41 @@
+h1 {
+    color: red;
+    text-align : center;
+    font-family: 'Pacifico', cursive;
+}
+
+body {
+    background-image: url("../img/background.jpg");
+}
+
+#topImage {
+    margin-left: auto;
+    margin-right:auto;
+    display:block;
+    height: 150px;
+    width: 30%;
+}
+
+#list {
+    margin: auto 0;
+    text-align: center;
+
+}
+
+#footerPic {
+    border-radius: 50px 50px 50px 50px;
+    height: 150px;
+    width: 30%;
+    display: block;
+    margin: 0 auto;
+}
+
+ul {
+    display:inline;
+}
+
+p {
+    margin: auto 0;
+    text-align: center;
+}
+
