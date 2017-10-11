@@ -61,7 +61,7 @@ display: name, salePrice, availableOnline, numReviews, customerRating
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Walmart Product Search</title>
+        <title>Walmart Search Bar</title>
         <meta charset="utf-8">
        
         <style>
@@ -127,7 +127,7 @@ display: name, salePrice, availableOnline, numReviews, customerRating
             }  
             
             if(!isset($_GET['sort'])) {
-                echo "<h2>You must select a sorting method!</h2>";
+                
             } else {
                 if(empty($_GET['sort'])) {
                     echo "<h2>You must select a sorting method!</h2>";
@@ -147,11 +147,7 @@ display: name, salePrice, availableOnline, numReviews, customerRating
                 echo "<img src='$productCustomerRatingImg[$i]' alt='No customer reviews'><br>";
                 echo "Product Availability: " . $productStock[$i] . "<br></p><hr>";
             }
-            
         ?>
-        
-        
-        
         <br>
        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
