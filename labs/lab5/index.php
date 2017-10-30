@@ -8,7 +8,7 @@ function getDeviceTypes() {
     global $conn;
     $sql = "SELECT DISTINCT(deviceType)
             FROM tc_device
-            GROUP BY deviceType";
+            ORDER BY deviceType";
     
     $stmt = $conn->prepare($sql);
     $stmt->execute();
@@ -63,7 +63,7 @@ function displayDevices(){
              
             $sql .= " ORDER BY :order ASC"; //using named parameters
             $namedParameters[':order'] = $_GET['orderBy'] ;
-            print($sql);
+
          }
         
         
@@ -84,7 +84,7 @@ function displayDevices(){
         
         echo  $record['deviceName'] . " " . $record['deviceType'] . " " .
               $record['price'] .  "  " . $record['status'] . 
-              "<a href='checkoutHistory.php?deviceId=".$record['deviceId']."'> Checkout History </a> <br />";
+              "<a href='checkoutHistory.php?deviceId=" . $record['deviceId'] . "'> Checkout History </a> <br />";
         
     }
 }
