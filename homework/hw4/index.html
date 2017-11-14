@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+   <meta charset="utf-8" />
+   <title><?= $team ?> Facts!</title>
+   <link href="CSS/styles.css" rel="stylesheet" type="text/css" />
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1 id="header"></h1>
+    </header>
+    <div id = "top">
+        <figure>
+            <img id = "topImage" src=""/>
+        </figure>
+    </div>
+    <div id = "list">
+        <ul>
+            <div id = "items">
+            </div>
+        </ul>
+    </div>
+    
+    <br>
+    
+    <p id='players'>
+    </p>
+    <button class='letter' id='button'>Refresh!</button>
+    
+    
+    
+<footer>
+            <hr>
+            <img id ="footerPic" src="" />
+            <p>
+                CST336 Internet Programming. 2017&copy; Velazquez <br />
+                <strong>Disclaimer: </strong> The information on this page is used for academic purposes only.
+            <p>
+        </footer>
+     <script>
+    
+    var teamPics0 = ["warriors1", "warriors2", "warriors3"];
+    var teamPics1 = ["lakers1", "lakers2", "lakers3"];
+    var teamPics2 = ["kings1", "kings2", "kings3"];
+    var selectedPics = [];
+    
+    var top5Warriors = ["Stephen Curry", "Kevin Durant", "Draymond Green", "Klay Thompson", "Andre Iguodala"];
+    var top5Lakers = ["Shaquille O'Neil", "Kobe Bryant", "Jerry West", "Kareem Abdul-Jabbar", "Magic Johnson"];
+    var top5Kings = ["Chris Webber", "Vlade Divac", "Mike Bibby", "Peja Stejakovic", "Oscar Robertson"];
+    var names = [];
+    
+    var random = Math.floor(Math.random() * 3);
+    
+            if(random == 0)
+            {
+                var fact1 = 'In 2016, the Warriors broke the record for the most wins in a regular season with a total of 73 wins and nine losses.';
+                var fact2 = 'Originally located in Philadelphia.';
+                var fact3 = 'In 2017 the Warriors won their first NBA championship against the Clevelenand Cavaliers in 40 years. ';
+                var team = 'Warriors';
+                
+            } else if (random == 1){
+                var fact1 = 'Hold the record for the longest game winning streak, set during the 1971-1972 season with 33 wins.';
+                var fact2 = 'A total of 21 hall of famers have played for the Lakers.';
+                var fact3 = 'The Lakers have a total of 16 NBA championship wins.';
+                var team = 'Lakers';
+                
+            } else {
+                var fact1 = 'One of the oldest basketball franchises, with its creation in 1923.';
+                var fact2 = 'Originated in Rochester, New York as the Rochester Seagrams.';
+                var fact3 = 'The Kings hold the record for most relocations out of any NBA team, with a total of 5.';
+                var team = 'Kings';
+                
+            }
+            
+    function famousPlayers(){
+        
+        if(team == 'Lakers'){
+            names = top5Lakers;
+            selectedPics = teamPics1;
+        } else if(team == 'Warriors'){
+        names = top5Warriors;
+        selectedPics = teamPics0;
+        } else {
+            names = top5Kings;
+            selectedPics = teamPics2;
+        }
+        
+    }
+    
+    function shuffleArray(array) {
+    for (var i = array.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+        }
+    }
+
+    
+    function randomPic(selectedPics){
+        var popped = selectedPics.pop()
+        return popped;
+    }        
+    
+    
+    function fillFacts(){
+        $("#items").append("<li>" + fact1 + "</li>");
+        $("#items").append("<li>" + fact2 + "</li>");
+        $("#items").append("<li>" + fact3 + "</li>");
+    }
+    
+    function fillRoster(){
+        $("#players").append("A list of famous players from the" + team + ": " + names[0] + ", " + names[1] + ", " + names[2] + ", " + names[3] + ", " + names[4] + ".");
+        
+        
+    }
+    function updateImage() {
+                
+            $("#topImage").attr("src","img/"+randomPic(selectedPics) + ".jpg");
+            
+        }
+    function updateFooter() {
+                
+            $("#footerPic").attr("src","img/"+randomPic(selectedPics) + ".jpg");
+            
+        }
+    function start(){
+        famousPlayers();
+        shuffleArray(selectedPics);
+        fillFacts();
+        fillRoster();
+        updateImage();
+        updateFooter();
+    }
+    
+    start();
+            
+            $("button").click( function(){ 
+                location.reload();
+            });
+            
+    
+
+    </script>
+</body>
+</html>
